@@ -1,0 +1,59 @@
+I got the same error for Box2D, but solved as follows.
+
+I am using Anaconda environment with python3.6.
+
+try these.
+
+conda install swig
+
+pip install box2d
+
+
+CREW
+driver[main]: the one who drives the car. when driver is alone, he makes the role of shooter too
+gunner: specialized shooter that can hit stronger and faster
+protector: melee thug who can easily defeat invaders
+saboteur: roguelike punk capable to jump into heavy vehicles to disable them
+miner: pyromaniac that drops mines to destroy vehicles near behind
+
+ROAD ARTIFACTS
+gas: recovers 30% of your full gas tank when catch
+ammo: recovers 30% of your full ammo when catch
+money: increases your bank account in a random value when catch
+repair tools: recovers 30% of your car's full life when catch
+trash pile(barrier): slows your vehicle
+broken car(barrier): slows your vehicle and deals 1-4 damage(ignores armor)
+fire barrels(barrier): deals 2-6 damage(ignores armor)
+broken road(barrier): makes you lose control of your vehicle for 2s
+
+VEHICLE ATTRIBUTES
+armor: how much damage your car can reduce of each attack
+melee weapon: damage your car deal when shove enemies
+strenght: ability to push enemies. greater is strenght, bigger is the enemy you can push
+speed: car speed and maneuverability
+life: car durability. when life reach 0, you are defeated
+
+VEHICLE TYPES
+chooper[starting vehicle](1 crew): fast motorcycle
+musclecar(2 crew): fast light car
+sedan(3 crew): medium car
+humvee(4 crew): heavy battle vehicle 
+wartruck(5 crew): unstoppable war machine
+
+ENEMIES
+crazyrider: speedy biker that can jump into your car when near. when it does, you lose control and can't shoot for 3s
+machinegunner: light vehycle that shoots when at your side
+assault van(heavy): armored vehycle that shoots when behind or in front of you
+locomotive(heavy): special vehycle with enemies at wagons. enemies inside can be defeated, but the train can't be
+jetskinner: biker at sea that jumps to you when you are at the lane near water. it explodes and deals damage if hit
+fireboat: water vehycle that shoots when at your side
+armoredtruck(heavy): truck very difficult to defeat with guns but is slow. have a powerful cannon 
+ram vehicle(heavy): strong truck specialized in shove. when hit, you lose control for 2s
+skyrider: fast flying skateboarder that drops mines when in front of you
+turret: steady tommy-gun that attacks 2 lanes
+
+BOSSES
+
+
+
+
